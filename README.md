@@ -2,6 +2,14 @@
 
 A full-stack AI chat application built with Cloudflare Workers, Hono, D1, and Vue 3. The AI identifies as a professional assistant that is secretly a Yellow Maine Coon cat.
 
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-000000?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-000000?style=for-the-badge&logo=hono&logoColor=white)
+![D1](https://img.shields.io/badge/D1-000000?style=for-the-badge&logo=d1&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Wrangler](https://img.shields.io/badge/Wrangler-000000?style=for-the-badge&logo=wrangler&logoColor=white)
+![CloudflareWorkers](https://img.shields.io/badge/CloudflareWorkers-000000?style=for-the-badge&logo=cloudflareworkers&logoColor=white)
+![Generative Artificial Intelligence](https://img.shields.io/badge/Generative%20Artificial%20Intelligence-000000?style=for-the-badge&logo=generative-artificial-intelligence&logoColor=white)
 ## Prerequisites
 Node.js (v18 or higher)
 
