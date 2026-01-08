@@ -67,7 +67,7 @@ npm install
 Configure Environment Variables: Create a .env file in the frontend/ root folder:
 
 ```Plaintext
-VITE_API_URL=http://127.0.0.1:8787
+VITE_API_ENDPOINT=http://127.0.0.1:8787
 ```
 Start the Frontend App:
 ```bash
