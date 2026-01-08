@@ -7,7 +7,7 @@ import { WorkflowEntrypoint, WorkflowStep } from 'cloudflare:workers';
 export class ChatWorkflow extends WorkflowEntrypoint<Env, any> {
   async run(event: any, step: WorkflowStep) {
     // get the user id and msg from endpoint
-    const { userId, message } = event;
+    const { userId, message } = event.payload;
 
     // look for chat history for the provided user id (max 6 last messages)
     const history = await step.do('fetch-history', async () => {
@@ -68,9 +68,22 @@ app.post('/chat', async (chat) => {
   const instance = await chat.env.CHAT_WORKFLOW.create({
     params: { userId, message }
   });
+  
+  // get status of instance
+  let status = await instance.status();
+  
+  // wait for instance to complete
+  while (status.status === "queued" || status.status === "running") {
+    await new Promise(resolve => setTimeout(resolve, 2000)); // wait 2s
+    status = await instance.status();
+  }
 
-  const reply = await instance.query();
-  return chat.json({ reply });
+  // check status of instance and return
+  if (status.status === "complete") {
+      return chat.json({ reply: status.output });
+    } else {
+      return chat.json({ reply: "Meow... something went wrong with my thoughts." }, 500);
+    }
 });
 
 export default app;
