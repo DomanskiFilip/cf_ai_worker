@@ -1,0 +1,19 @@
+name = "ai-backend"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+
+# The Database Binding
+[[d1_databases]]
+binding = "chat_memory"
+database_name = "chat-memory"
+database_id = "79b8a87f-8e3f-4032-9a45-2dc67b4a1153"
+
+# The AI Binding (Model)
+[ai]
+binding = "AI"
+
+# The Workflow Binding
+[[workflows]]
+name = "ai-chat-workflow"
+binding = "CHAT_WORKFLOW"
+class_name = "ChatWorkflow"
