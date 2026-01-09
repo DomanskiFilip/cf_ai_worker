@@ -92,3 +92,17 @@ State Management: Vue 3 Composition API with persistent localStorage for User ID
 CORS Error: Ensure app.use('*', cors()) is present in backend/src/index.ts.
 
 Undefined URL: If the frontend can't find the backend, ensure your .env variables start with VITE_ and that you restarted the frontend dev server.
+
+## How would I improve if this would be an actual product
+
+Login and OAuth, of course.
+
+Caching latest responses and repeating queries and responses, for example using Redis.
+
+Load balancing.
+
+More models, for e.g., visual and sound-to-text models for voice interaction and the ability to send and analyze pictures.
+
+Additional tables for useful data and personality of the AI -> just an idea.
+
+
