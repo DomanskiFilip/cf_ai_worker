@@ -86,7 +86,9 @@ Llama 3.3 70B: AI model used via Workers AI
 
 ## How would I improve if this would be an actual product
 
-Login and OAuth, of course.
+Login and OAuth, of course. 
+Currently it uses a random generated id saved in localstorage to indentify the user and show the history
+its an easy aproach for demos I like to use
 
 Caching latest responses and repeating queries and responses, for example using Redis.
 
