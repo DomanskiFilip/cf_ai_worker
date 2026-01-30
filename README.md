@@ -75,23 +75,14 @@ npm run dev
 ```
 The app should now be accessible at http://localhost:5173.
 
-## Key Features Demonstrated
+## Key Features
 Hono Framework: Used for lightweight, edge-native routing and CORS handling.
 
 Cloudflare Workflows: Orchestrates the multi-step process (Fetch History -> AI Inference -> Save to DB).
 
 D1 Database: Persistent storage for user chat history to provide AI "memory."
 
-Llama 3.3 70B: High-performance AI model used via Workers AI.
-
-State Management: Vue 3 Composition API with persistent localStorage for User IDs.
-
-## Troubleshooting
-500 Internal Server Error: Check the backend terminal. Ensure you ran the d1 execute --local command.
-
-CORS Error: Ensure app.use('*', cors()) is present in backend/src/index.ts.
-
-Undefined URL: If the frontend can't find the backend, ensure your .env variables start with VITE_ and that you restarted the frontend dev server.
+Llama 3.3 70B: AI model used via Workers AI
 
 ## How would I improve if this would be an actual product
 
