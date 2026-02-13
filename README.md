@@ -27,19 +27,19 @@ cf_ai_worker/
 │   │   └── index.ts        # Entry point: Hono API routes & ChatWorkflow class
 │   ├── schema.sql          # D1 Database table definitions
 │   ├── wrangler.toml       # Cloudflare configuration (D1, Workflows, AI bindings)
-│   └── package.json        # Backend dependencies (Hono, Wrangler)
+│   └── package.json        
 │
 ├── frontend/               # Vue.js Web Application
 │   ├── src/
 │   │   ├── components/
 │   │   │   └── chat.vue    # Main Chat component (UI & API fetching)
 │   │   ├── App.vue         # Root Vue component (Layout & Footer)
-│   │   └── main.js         # Vue initialization
+│   │   └── main.js         
 │   ├── .env                # Local environment variables (VITE_API_URL)
-│   ├── index.html          # HTML entry point
-│   └── package.json        # Frontend dependencies (Vue, Vite)
+│   ├── index.html          
+│   └── package.json        
 │
-└── README.md               # Project documentation
+└── README.md               
 ```
 ## Setup Instructions
 1. Backend Setup (Cloudflare Worker)
